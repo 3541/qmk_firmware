@@ -25,7 +25,7 @@ def new_keymap(cli):
     kb_path = Path('keyboards') / keyboard
     keymap_path = qmk.path.keymap(keyboard)
     keymap_path_default = keymap_path / 'default'
-    keymap_path_new = keymap_path / keymap
+    keymap_path_new = keymap_path / str(keymap)
 
     # check directories
     if not kb_path.exists():

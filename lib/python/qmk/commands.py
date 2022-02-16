@@ -81,7 +81,7 @@ def create_make_command(keyboard, keymap, target=None, dry_run=False, parallel=1
 
         A command that can be run to make the specified keyboard and keymap
     """
-    make_args = [keyboard, keymap]
+    make_args = [keyboard, str(keymap)]
 
     if target:
         make_args.append(target)

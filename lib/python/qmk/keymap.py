@@ -353,6 +353,8 @@ def locate_keymap(keyboard, keymap):
     if not qmk.path.is_keyboard(keyboard):
         raise KeyError('Invalid keyboard: ' + repr(keyboard))
 
+    keymap = str(keymap)
+
     # Check the keyboard folder first, last match wins
     checked_dirs = ''
     keymap_path = ''
