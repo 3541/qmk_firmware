@@ -1,4 +1,4 @@
-{ avr ? true, arm ? true, teensy ? true }:
+{ avr ? true, arm ? false, teensy ? false }:
 
 let
   overlay = self: super:
